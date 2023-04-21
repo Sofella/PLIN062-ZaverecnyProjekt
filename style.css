@@ -2,14 +2,30 @@
     text-decoration: none;
     font-family: libre baskerville,source serif pro,noto serif,serif;
     color: #363636;
-    margin-left: 5px;
-    background-color: #b6aca8;
+}
+
+body {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+  
+@media only screen and (max-width: 550px) {
+    body {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 
 .logo {
     display: flex;
     align-items: center;
-    border-bottom: 2px solid #363636;
     margin-top: 40px;
 }
 
@@ -30,25 +46,70 @@ h1 {
 }
 
 .menu a {
-    font-size:1.2em;
-    vertical-align:middle;
+    font-size:1.3em;
+    vertical-align:bottom;
     text-align:center;
-    padding:1em
+    padding:1em;
+    padding-bottom: 0px;
 }
 
-a:hover {
-    text-decoration: underline;
-    color: black;
+
+.top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-bottom: 50px;
+}
+  
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+  
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+  
+@media screen and (max-width: 800px) {
+    .top {
+      grid-template-columns: 1fr;
+    }
+    .logo, .menu {
+      justify-content: center;
+    }
+    .menu {
+      margin-top: 10px;
+    }
 }
 
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+  
 .contact {
     display: flex;
-    align-items:center;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
   
 .contact li {
-    margin-right: 1rem;
+    margin: 0 10px;
+}
+  
+.contact li:first-child {
+    margin-left: 0;
 }
   
 .contact li:last-child {
@@ -58,24 +119,59 @@ a:hover {
 .contact a {
     display: flex;
     align-items: center;
+    text-decoration: none;
+    color: #000;
+    margin: 0;
+    padding: 0;
 }
   
 .contact img {
-    width: 24px;
-    height: 24px;
-    margin-right: 0.5rem;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
 }
   
-.contact p {
-    margin-right: 1rem;
+
+
+.search {
+    padding-bottom: 20px;
 }
 
 .products {
-    display: flex;
-    align-items:center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.products li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+  
+.products h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+  
+.products img {
+    max-width: 100%;
+}
+  
+.products p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+  
+  .products span {
+    font-weight: bold;
 }
 
-.products img {
-    width: 250px;
+a:hover {
+    text-decoration: underline;
+    color: black;
 }
