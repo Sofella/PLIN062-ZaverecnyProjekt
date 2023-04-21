@@ -1,0 +1,81 @@
+* {
+    text-decoration: none;
+    font-family: libre baskerville,source serif pro,noto serif,serif;
+    color: #363636;
+    margin-left: 5px;
+    background-color: #b6aca8;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #363636;
+    margin-top: 40px;
+}
+
+#favicon {
+    height: 70px;
+    width: 70px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.menu {
+    display:flex
+}
+
+.menu a {
+    font-size:1.2em;
+    vertical-align:middle;
+    text-align:center;
+    padding:1em
+}
+
+a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.contact {
+    display: flex;
+    align-items:center;
+    list-style: none;
+}
+  
+.contact li {
+    margin-right: 1rem;
+}
+  
+.contact li:last-child {
+    margin-right: 0;
+}
+  
+.contact a {
+    display: flex;
+    align-items: center;
+}
+  
+.contact img {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+}
+  
+.contact p {
+    margin-right: 1rem;
+}
+
+.products {
+    display: flex;
+    align-items:center;
+    list-style: none;
+}
+
+.products img {
+    width: 250px;
+}
