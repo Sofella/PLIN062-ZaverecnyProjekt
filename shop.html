@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Sofella: Shop</title>
     
     <meta name="description" content="Templates e-shop">
@@ -37,12 +38,12 @@
             <form class="search">
                 <label for="search">Search:</label>
                 <input type="text" id="search" name="search">
-                <label for="filter">Filter by price:</label>
+                <label id="filterPrice" for="filter">Filter by price:</label>
                 <select id="filter" name="filter">
                     <option value="0">No filter</option>
-                    <option value="10">0 - 50czk</option>
-                    <option value="20">51 - 100czk</option>
-                    <option value="30">more than 100czk</option>
+                    <option value="50">0 - 50czk</option>
+                    <option value="100">51 - 100czk</option>
+                    <option value="100">more than 100czk</option>
                 </select>
                 <button type="submit">Search</button>
             </form>
@@ -116,7 +117,7 @@
                 <p>Copyright © 2023 Sofella. All rights reserved.</p>
             </div>
 
-            <ul class="contact">
+            <ul class="links">
                 <li>
                     <a href="mailto:sofellablack@gmail.com">sofellablack@gmail.com</a>
                 </li>
