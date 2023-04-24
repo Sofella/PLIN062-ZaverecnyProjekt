@@ -150,6 +150,12 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
 }
+
+#basket {
+    height: 55px;
+    width: 55px;
+    margin-left: 20px;
+}
   
 @media screen and (max-width: 800px) {
     .top {
@@ -157,7 +163,10 @@ footer {
     }
     .logo, .menu {
       justify-content: center;
-    } 
+    }
+    #basket {
+        margin-left: 0px;
+    }
 }
 
 /* Footer */
