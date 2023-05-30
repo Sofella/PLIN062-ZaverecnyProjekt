@@ -1,8 +1,21 @@
 /* Global styles and typography */
+:root {
+  --main-bg-color: white;
+  --main-tx-color: #f7f1e9;
+  --about-tx-color: #02000c;
+  --footer-bg-color: #e8e2d9;
+  --hover-color: black;
+  --search-color: #ccc;
+  --contact-color: #555;
+  --button-color: #c28728;
+  --button-click-color: #563b00;
+  --footer-tx-color: #363636;
+}
+
 * {
     text-decoration: none;
     font-family: libre baskerville, source serif pro, noto serif, serif;
-    color: #02000c;
+    color: var(--about-tx-color);
     list-style: none;
 }
 
@@ -25,7 +38,7 @@ a {
 
 a:hover {
     text-decoration: underline;
-    color: black;
+    color: var(--hover-color);
 }
 
 label {
@@ -42,7 +55,7 @@ body {
 
 header {
     padding: 0px 50px 25px 50px;
-    background-color: #ffffff;
+    background-color: var(--main-bg-color);
 }
 
 main {
@@ -53,7 +66,7 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     padding: 10px 170px;
-    background-color: #e8e2d9;
+    background-color: var(--footer-bg-color);
     justify-content: center;
 }
 
@@ -107,7 +120,7 @@ footer {
 
 div.copyright p {
     font-size: 17px;
-    color: #363636;
+    color: var(--footer-tx-color);
     margin: 5px 0px;
 }
 
@@ -123,7 +136,7 @@ div.copyright p {
 .links a {
     display: flex;
     align-items: center;
-    color: #000;
+    color: var(--hover-color);
     margin: 0 10px;
 }
 
@@ -150,12 +163,12 @@ main .welcome {
 }
 
 div.welcome h2 {
-    color: #f7f1e9;
+    color: var(--main-tx-color);
     font-size: 25px;
 }
 
 div.welcome p {
-    color: #f7f1e9;
+    color: var(--main-tx-color);
     font-size: 22px;
 }
 
@@ -176,7 +189,7 @@ label {
 input {
   padding: 5px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--search-color);
   margin-right: 8px;
   width: 170px;
   font-size: 18px;
@@ -184,7 +197,7 @@ input {
 select {
   padding: 5px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--search-color);
   margin-right: 5px;
   font-size: 18px;
 }
@@ -192,13 +205,13 @@ button {
   padding: 5px 10px;
   border-radius: 5px;
   border: none;
-  background-color: #c28728;
-  color: #fff;
+  background-color: var(--button-color);
+  color: var(--main-bg-color);
   font-size: 20px;
   cursor: pointer;
 }
 button:hover {
-  background-color: #563b00;
+  background-color: var(--button-click-color);
 }
 
 /* Products */
@@ -253,7 +266,7 @@ button:hover {
   font-size: 19px;
 }
 .contact-info a {
-  color: #555;
+  color: var(--contact-color);
   text-decoration: none;
 }
 .contact-info a:hover {
@@ -268,7 +281,7 @@ button:hover {
   margin-bottom: 10px;
 }
 .contact-info li a {
-  color: #555;
+  color: var(--contact-color);
   text-decoration: none;
 }
 .contact-info li a:hover {
@@ -287,7 +300,7 @@ button:hover {
   padding: 5px;
   margin-bottom: 10px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--search-color);
 }
 
 /* Media queries */
