@@ -310,8 +310,33 @@ button:hover {
 }
 
 /* Product pages */
+.backShop {
+  grid-area: a;
+  padding-bottom: 20px;
+}
+.zoom {
+  position: absolute;
+  width: 80px;
+  color: var(--main-tx-color);
+  margin: 180px 0px 0px 130px;
+}
 .oneProduct {
-  width: 500px;
+  width: 350px;
+  padding-right: 20px;
+  grid-area: b;
+  position: relative;
+}
+.oneProduct:hover {
+  -webkit-filter: brightness(60%);
+}
+.productInfo {
+  grid-area: c;
+}
+.productPage {
+  display: grid;
+  grid-template:
+  "a a"
+  "b c";
 }
 
 /* Media queries */
