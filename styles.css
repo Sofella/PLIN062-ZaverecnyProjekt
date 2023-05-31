@@ -149,6 +149,26 @@ div.copyright p {
 #trendProducts {
   padding-bottom: 20px;
 }
+#sofella {
+  width: 300px;
+  grid-area: a;
+}
+#creator {
+  padding-top: 25px;
+  grid-area: b;
+}
+#moreAbout {
+  grid-area: c;
+}
+.mainAbout {
+  display: grid;
+  grid-gap: 15px;
+  grid-template:
+  "a b"
+  "a c";
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
 
 /* Home-paper */
 .paper-container {
