@@ -270,6 +270,7 @@ button:hover {
 
 .products a:hover img {
   transform: scale(1.05);
+  -webkit-filter: brightness(110%);
 }
 .products span {
   font-weight: bold;
@@ -369,7 +370,7 @@ button:hover {
 }
 .close:hover,
 .close:focus {
-  color: black;
+  color: var(--about-tx-color);
   text-decoration: none;
   cursor: pointer;
 }
@@ -441,7 +442,7 @@ button:hover {
   .dropbtn {
     text-align: right;
     background-color: transparent;
-    color: #000;
+    color: var(--about-tx-color);
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -455,7 +456,7 @@ button:hover {
     z-index: 1;
   }
   .dropdown-content a {
-    color: #000;
+    color: var(--about-tx-color);
     padding: 12px 15px;
     text-decoration: none;
     display: block;
