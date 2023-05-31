@@ -158,6 +158,18 @@ div.copyright p {
   margin-left: auto;
   margin-right: auto;
 }
+.welcome {
+  text-align: center;
+}
+#trending {
+  border-top-width: 0.8px;
+  border-top-style: solid;
+  padding-top: 15px;
+  margin: 25px 0px;
+}
+#trendProducts {
+  padding-bottom: 20px;
+}
 
 /* Home-paper */
 .paper-container {
