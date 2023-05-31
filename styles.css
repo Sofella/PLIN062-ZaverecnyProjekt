@@ -240,11 +240,13 @@ button:hover {
   max-width: 100%;
   padding-bottom: 15px;
 }
+
 .products a:hover img {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .products span {
   font-weight: bold;
+  color: var(--contact-color);
 }
 
 /* About-main */
@@ -307,6 +309,12 @@ button:hover {
   border: 1px solid var(--search-color);
 }
 
+/* Product pages */
+.oneProduct {
+  width: 500px;
+}
+
+
 /* Media queries */
 @media screen and (max-width: 800px) {
   .menu {
@@ -346,9 +354,9 @@ button:hover {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: var(--main-bg-color);
     min-width: 100px;
-    box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 15px 0px var(--hover-color);
     z-index: 1;
   }
   .dropdown-content a {
@@ -358,7 +366,7 @@ button:hover {
     display: block;
   }
   .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: var(--main-tx-color);
   }
   .dropdown:hover .dropdown-content {
     display: block;
