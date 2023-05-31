@@ -315,9 +315,6 @@ button:hover {
 }
 
 /* Modal styles */
-
-/* Existing CSS styles */
-
 .modal {
   display: none;
   position: fixed;
@@ -329,7 +326,6 @@ button:hover {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
 }
-
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto;
@@ -337,7 +333,6 @@ button:hover {
   border: 1px solid #888;
   width: 80%;
 }
-
 .close {
   color: #aaa;
   float: right;
@@ -345,7 +340,6 @@ button:hover {
   font-weight: bold;
   cursor: pointer;
 }
-
 .close:hover,
 .close:focus {
   color: black;
