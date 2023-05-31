@@ -183,7 +183,7 @@ div.welcome p {
 
 /* Search form */
 .search {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 label {
   margin-right: 5px;
@@ -250,13 +250,15 @@ button:hover {
 }
 
 /* About-main */
+.about {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
 /* Contact me */
 .contact {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 20px 0px;
-  border-top-width: 1px;
-  border-top-style: solid;
   padding-top: 15px;
 }
 .contactMe h2 {
@@ -296,6 +298,8 @@ button:hover {
 .leaveInfo form {
   display: flex;
   flex-direction: column;
+  margin-top: 15px;
+  width: 350px;
 }
 .leaveInfo label {
   display: block;
@@ -307,6 +311,46 @@ button:hover {
   margin-bottom: 10px;
   border-radius: 5px;
   border: 1px solid var(--search-color);
+  width: 300px;
+}
+
+/* Modal styles */
+
+/* Existing CSS styles */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* Product pages */
@@ -337,6 +381,12 @@ button:hover {
   grid-template:
   "a a"
   "b c";
+}
+#productFooter {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 /* Media queries */
