@@ -10,7 +10,7 @@ var btn = document.getElementById("submitBtn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal 
+// When the user clicks the button, open the modal and change text
 btn.onclick = function(event) {
     event.preventDefault();
     // Get the form values
@@ -28,7 +28,7 @@ btn.onclick = function(event) {
     form.reset();
 }
 
-// When the user clicks on <span> (x), close the modal
+// When the user clicks on (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
 }
