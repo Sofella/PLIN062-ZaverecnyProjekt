@@ -152,6 +152,7 @@ div.copyright p {
 #sofella {
   width: 300px;
   grid-area: a;
+  padding-top: 25px;
 }
 #creator {
   padding-top: 25px;
@@ -168,6 +169,13 @@ div.copyright p {
   "a c";
   padding-top: 20px;
   padding-bottom: 10px;
+}
+.creator {
+  max-width: 100%;
+}
+
+.creator p {
+  word-wrap: break-word;
 }
 
 /* Home-paper */
@@ -420,6 +428,9 @@ button:hover {
     padding: 10px 70px;
     justify-content: space-between;
   }
+  .creator p:nth-child(n+3) {
+    display: none;
+  }
 }
 @media screen and (max-width: 800px) {
   header {
@@ -484,7 +495,10 @@ button:hover {
   }
   .dropdown:hover .dropdown-content {
     display: block;
-  } 
+  }
+  .creator p:nth-child(n+3) {
+    display: none;
+  }
 }
 @media only screen and (max-width: 550px) {
   header {
@@ -495,6 +509,9 @@ button:hover {
   }
   footer {
     padding: 10px 10px;
+  }
+  .creator p:nth-child(n+2) {
+    display: none;
   }
 }
 @media only screen and (max-width: 330px) {
